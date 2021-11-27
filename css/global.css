@@ -311,7 +311,6 @@ button:-moz-focusring,
 }
 
 /*-------------------通用模块(m-)--------------------------*/
-
 .m-logo {
   display: flex;
   padding: 16px;
@@ -373,6 +372,18 @@ button:-moz-focusring,
 .m-menu__sub > .m-menu__sub--selected {
   background: #1890ff;
   color: white;
+}
+
+.g-ant__sider--closed .m-logo {
+  padding: 16px 8px;
+}
+
+.g-ant__sider--closed .m-menu__title {
+  transform: scale(1.5);
+}
+
+.g-ant__sider--closed .m-menu__sub {
+  display: none;
 }
 /*-------------------通用元件(u-)--------------------------*/
 .u-bar {
