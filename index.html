@@ -13,7 +13,7 @@
 <body>
     <div class="g-ant">
         <div class="g-ant__sider">
-            <div class="g-ant-sider__wrapper .g-ant__sider--closed">
+            <div class="g-ant-sider__wrapper g-ant-sider__wrapper--fixed">
                 <div class="g-ant-sider__head">
                     <a href="#" class="m-logo">
                         <img src="./static/logo.svg" alt="">
@@ -188,6 +188,25 @@
 
         </div>
     </div>
+
+    <script>
+        const menuTitles = document.querySelectorAll('.m-menu__title')
+        for (let i = 0; i < menuTitles.length; i++) {
+            menuTitles[i].onclick = function () {
+                const menu = this.parentElement
+                menu.classList.toggle('m-menu--selected')
+
+                const arrow = this.querySelector('[class*="icon-arrow"]')
+                if (menu.className.includes('m-menu--selected')) {
+                    arrow.className = 'iconfont icon-arrowup'
+                } else {
+                    arrow.className = 'iconfont icon-arrowdown'
+                }
+            }
+        }
+
+
+    </script>
 </body>
 
 </html>

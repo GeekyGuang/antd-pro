@@ -279,6 +279,7 @@ button:-moz-focusring,
 
 .g-ant-sider__main {
   flex-grow: 1;
+  overflow: hidden auto;
 }
 
 .g-ant-sider__wrapper--fixed {
@@ -292,6 +293,21 @@ button:-moz-focusring,
 .g-ant__sider--closed {
   width: 48px;
   overflow: hidden;
+}
+
+.g-ant-sider__main::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.g-ant-sider__main::-webkit-scrollbar-thumb {
+  background: #51606d;
+  border-radius: 3px;
+}
+
+.g-ant-sider__main::-webkit-scrollbar-track {
+  background: #263849;
+  border-radius: 3px;
 }
 
 /*-------------------通用模块(m-)--------------------------*/
