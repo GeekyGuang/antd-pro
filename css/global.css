@@ -273,6 +273,15 @@ button:-moz-focusring,
 
 .g-ant-sider__wrapper--fixed {
   position: fixed;
+  left: 0;
+  top: 0;
+  width: inherit;
+  overflow: hidden;
+}
+
+.g-ant__sider--closed {
+  width: 48px;
+  overflow: hidden;
 }
 
 /*-------------------通用模块(m-)--------------------------*/
