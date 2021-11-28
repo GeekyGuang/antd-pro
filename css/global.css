@@ -267,10 +267,6 @@ button:-moz-focusring,
   color: white;
 }
 
-.g-ant__main {
-  flex-grow: 1;
-}
-
 .g-ant-sider__wrapper {
   height: 100%;
   display: flex;
@@ -308,6 +304,48 @@ button:-moz-focusring,
 .g-ant-sider__main::-webkit-scrollbar-track {
   background: #263849;
   border-radius: 3px;
+}
+
+.g-ant__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f0f2f5;
+}
+
+.g-ant-main__head {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  column-gap: 20px;
+  padding: 0 15px;
+  background: white;
+}
+
+.g-ant-main__head > span {
+  margin-left: -15px;
+}
+
+.g-ant-main__main {
+  flex-grow: 1;
+  border: 1px solid red;
+}
+
+.g-ant-main__foot {
+  line-height: 28px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.g-ant-main__foot > p > a:nth-child(2) {
+  padding: 0 40px;
 }
 
 /*-------------------通用模块(m-)--------------------------*/
@@ -385,6 +423,7 @@ button:-moz-focusring,
 .g-ant__sider--closed .m-menu__sub {
   display: none;
 }
+
 /*-------------------通用元件(u-)--------------------------*/
 .u-bar {
   display: block;
