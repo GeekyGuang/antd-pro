@@ -331,7 +331,7 @@ button:-moz-focusring,
 
 .g-ant-main__main {
   flex-grow: 1;
-  border: 1px solid red;
+  padding: 24px;
 }
 
 .g-ant-main__foot {
@@ -422,6 +422,46 @@ button:-moz-focusring,
 
 .g-ant__sider--closed .m-menu__sub {
   display: none;
+}
+
+.m-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-card__title {
+  height: 57px;
+  background: white;
+  flex-shrink: 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.m-card__body {
+  flex-grow: 1;
+  background: white;
+}
+
+.m-card:nth-child(1) {
+  grid-area: a1;
+}
+.m-card:nth-child(2) {
+  grid-area: a2;
+}
+.m-card:nth-child(3) {
+  grid-area: a3;
+}
+.m-card:nth-child(4) {
+  grid-area: a4;
+}
+.m-card:nth-child(5) {
+  grid-area: a5;
+}
+.m-card:nth-child(6) {
+  grid-area: a6;
 }
 
 /*-------------------通用元件(u-)--------------------------*/
