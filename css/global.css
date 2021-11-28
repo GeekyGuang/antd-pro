@@ -464,9 +464,101 @@ button:-moz-focusring,
   grid-area: a6;
 }
 
+.m-setting {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background: white;
+}
+
+.m-setting__bar {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: -48px;
+  top: calc(50% - 24px);
+  background: #1890ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.m-setting__item {
+  padding: 0 16px;
+}
+
+.m-setting-item__theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.m-setting__item > h3 {
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 54px;
+}
+
 /*-------------------通用元件(u-)--------------------------*/
 .u-bar {
   display: block;
   padding: 15px;
   color: white;
+}
+
+.u-foxiaolan,
+.u-bomu,
+.u-huoshan,
+.u-rimu,
+.u-mingqing,
+.u-jiguanglv,
+.u-jikelan,
+.u-jiangzi {
+  width: 20px;
+  height: 20px;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  line-height: 20px;
+  text-align: center;
+}
+
+.u-foxiaolan {
+  background: #188efc;
+}
+
+.u-bomu {
+  background: #f5212d;
+}
+
+.u-huoshan {
+  background: #fe531f;
+}
+
+.u-rimu {
+  background: #fbae14;
+}
+
+.u-mingqing {
+  background: #14c2c3;
+}
+
+.u-jiguanglv {
+  background: #53c41a;
+}
+
+.u-jikelan {
+  background: #2f54eb;
+}
+
+.u-jiangzi {
+  background: #722ed1;
 }
