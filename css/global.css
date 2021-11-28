@@ -247,7 +247,7 @@ button:-moz-focusring,
 
 /*—————————————————————通用方法———————————————————————*/
 :root {
-  --theme: #53c41a;
+  --theme: #1491fe;
 }
 .show {
   display: block !important;
@@ -507,6 +507,17 @@ button:-moz-focusring,
   margin-top: 54px;
 }
 
+.m-setting-item__toggle {
+  padding-bottom: 50px;
+}
+
+.m-setting-item__toggle > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
 /*-------------------通用元件(u-)--------------------------*/
 .u-bar {
   display: block;
@@ -567,4 +578,22 @@ button:-moz-focusring,
   width: 100%;
   height: 1px;
   background: #f6f6f6;
+}
+
+.u-switch {
+  width: 28px;
+  height: 16px;
+  border-radius: 100px;
+  background: var(--theme);
+  position: relative;
+}
+
+.u-switch > .u-switch__handle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background: white;
+  border-radius: 100%;
+  left: 1px;
+  top: 1px;
 }
