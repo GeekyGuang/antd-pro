@@ -469,13 +469,17 @@ button:-moz-focusring,
 
 .m-setting {
   position: fixed;
-  right: 0;
+  right: -300px;
   top: 0;
   height: 100vh;
   width: 300px;
   background: white;
   padding: 0 16px;
   box-sizing: border-box;
+}
+
+.m-setting--open {
+  right: 0;
 }
 
 .m-setting__bar {

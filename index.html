@@ -278,6 +278,21 @@
             }
         }
 
+        const setting_bar = document.querySelector('.m-setting__bar')
+        const setting = document.querySelector('.m-setting')
+
+        setting_bar.onclick = function(){
+            setting.classList.toggle('m-setting--open')
+            const setting_icon = this.querySelector('.iconfont')
+            console.log(setting_icon)
+
+            if(setting.className.includes('m-setting--open')){
+                setting_icon.className="iconfont icon-close"
+            } else{
+                setting_icon.className="iconfont icon-setting"
+            }
+        }
+
 
 
 
