@@ -468,6 +468,7 @@ button:-moz-focusring,
 }
 
 .m-setting {
+  z-index: 10;
   position: fixed;
   right: -300px;
   top: 0;
@@ -480,6 +481,10 @@ button:-moz-focusring,
 
 .m-setting--open {
   right: 0;
+}
+
+.m-setting--open + .u-mask{
+  display: block;
 }
 
 .m-setting__bar {
@@ -600,4 +605,15 @@ button:-moz-focusring,
   border-radius: 100%;
   left: 1px;
   top: 1px;
+}
+
+.u-mask {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
 }
