@@ -296,6 +296,19 @@
             }
         }
 
+        const themes = document.querySelectorAll('.m-setting-item__theme > li')
+        for (let i=0; i<themes.length; i++){
+            themes[i].onclick = function(){
+                for(let i=0; i<themes.length; i++){
+                    themes[i].innerHTML=""
+                }
+                this.innerHTML = '<i class="iconfont icon-check"></i>'
+
+                const color = getComputedStyle(this).backgroundColor;
+                document.documentElement.style.setProperty('--theme', color);
+            }
+        }
+
 
 
 
