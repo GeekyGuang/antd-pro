@@ -359,7 +359,7 @@ button:-moz-focusring,
   z-index: 2;
 }
 
-.g-ant-main__head--fixed + .g-ant-main__main {
+.g-ant-main__head--fixed:not(.hide) + .g-ant-main__main {
   margin-top: 48px;
 }
 
