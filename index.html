@@ -123,8 +123,13 @@
 
             </div>
         </div>
+        <div class="u-mask"></div>
         <div class="g-ant__main">
             <div class="g-ant-main__head g-ant-main__head--fixed">
+                <div class="g-ant-main__logo">
+                    <img src="./static/logo.svg" alt="">
+                    <i class="iconfont icon-outdent u-bar"></i>
+                </div>
                 <i class="iconfont icon-idcard"></i>
                 <i class="iconfont icon-check-circle"></i>
                 <i class="iconfont icon-read"></i>
@@ -197,8 +202,7 @@
 
         </div>
     </div>
-
-
+    
     <div class="m-setting">
         <div class="m-setting__bar">
             <i class="iconfont icon-setting"></i>
@@ -268,7 +272,7 @@
             }
         }
 
-        const bar = document.querySelector('.u-bar')
+        const bar = document.querySelector('.g-ant-sider__foot .u-bar')
         const sider = document.querySelector('.g-ant__sider')
         const menus = document.querySelectorAll('.m-menu')
         bar.onclick = function () {
@@ -334,6 +338,18 @@
         siderShow.onclick = function(){
             this.classList.toggle('u-switch--closed');
             sider.classList.toggle('hide');
+        }
+
+        const bar2 = document.querySelector('.g-ant-main__logo .u-bar')
+        bar2.onclick = function(){
+            if(!sider.classList.contains('hide')){
+                sider.classList.add('show')
+            }
+        }
+
+        const mask = document.querySelector('.g-ant__sider + .u-mask')
+        mask.onclick = function(){
+            sider.classList.remove('show');
         }
 
 

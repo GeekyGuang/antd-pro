@@ -362,7 +362,20 @@ button:-moz-focusring,
 .g-ant-main__head--fixed:not(.hide) + .g-ant-main__main {
   margin-top: 48px;
 }
+.g-ant-main__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  display: none;
+}
 
+.g-ant-main__logo > img {
+  width: 32px;
+}
+
+.g-ant-main__logo > .u-bar {
+  color: inherit;
+}
 /*-------------------通用模块(m-)--------------------------*/
 .m-logo {
   display: flex;
@@ -635,5 +648,43 @@ button:-moz-focusring,
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 1;
+}
+
+
+/*---------------响应式布局---------------------*/
+@media (max-width: 1400px) {
+  
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .g-ant-main__logo {
+    display: flex;
+  }
+
+  .g-ant__sider {
+    display: none;
+  }
+
+  .show {
+    display: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .g-ant__sider:is(.show) + .u-mask {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+
 }
