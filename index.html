@@ -124,7 +124,7 @@
             </div>
         </div>
         <div class="g-ant__main">
-            <div class="g-ant-main__head">
+            <div class="g-ant-main__head g-ant-main__head--fixed">
                 <i class="iconfont icon-idcard"></i>
                 <i class="iconfont icon-check-circle"></i>
                 <i class="iconfont icon-read"></i>
@@ -221,12 +221,12 @@
             <h3>固定内容</h3>
             <ul class="m-setting-item__toggle">
                 <li><span>内容头部</span>
-                    <div class="u-switch">
+                    <div class="u-switch j-head--fixed">
                         <div class="u-switch__handle"></div>
                     </div>
                 </li>
                 <li><span>侧边菜单</span>
-                    <div class="u-switch">
+                    <div class="u-switch j-sider--fixed">
                         <div class="u-switch__handle"></div>
                     </div>
                 </li>
@@ -237,12 +237,12 @@
             <h3>显示内容</h3>
             <ul class="m-setting-item__toggle">
                 <li><span>内容头部</span>
-                    <div class="u-switch">
+                    <div class="u-switch j-head--show">
                         <div class="u-switch__handle"></div>
                     </div>
                 </li>
                 <li><span>侧边菜单</span>
-                    <div class="u-switch">
+                    <div class="u-switch j-sider--show">
                         <div class="u-switch__handle"></div>
                     </div>
                 </li>
@@ -309,6 +309,22 @@
             }
         }
 
+        const headFixed = document.querySelector('.j-head--fixed')
+        const siderFixed = document.querySelector('.j-sider--fixed')
+        const headShow = document.querySelector('.j-head--show')
+        const siderShow = document.querySelector('.j-sider--show')
+        const mainHead = document.querySelector('.g-ant-main__head')
+        const siderBar = document.querySelector('.g-ant-sider__wrapper')
+
+        headFixed.onclick = function(){
+            this.classList.toggle('u-switch--closed');
+            mainHead.classList.toggle('g-ant-main__head--fixed')
+        }
+
+        siderFixed.onclick = function(){
+            this.classList.toggle('u-switch--closed');
+            siderBar.classList.toggle('g-ant-sider__wrapper--fixed')
+        }
 
 
 
